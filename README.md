@@ -14,4 +14,4 @@
 	</li>
 </ol>
 
-<p>Reference: <i href="https://github.com/ageron/handson-ml2">Hands On ML Notebooks Repo</i></p>
+<p>Reference: <a href="https://github.com/ageron/handson-ml2">Hands On ML Notebooks Repo</a></p>
