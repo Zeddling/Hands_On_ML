@@ -1,9 +1,17 @@
 # Hands On ML by Aurelien Geron
 <ol>
 	<li>
-		<strong>1. End to End Machine Learning project</strong>
+		<strong>End to End Machine Learning project</strong>
 		<p>
 			This chapter is a tutorial on the various stages a full ML project undergoes.
 		</p>
 	</li>
+	<li>
+		<strong>Classification</strong>
+		<p>
+			This chapter is an introduction to classification.
+		</p>
+	</li>
 </ol>
+
+<p>Reference: <i href="https://github.com/ageron/handson-ml2">Hands On ML Notebooks Repo</i></p>
