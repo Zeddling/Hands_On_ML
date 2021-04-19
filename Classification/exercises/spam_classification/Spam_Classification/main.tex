@@ -1,0 +1,78 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[export]{adjustbox}
+\usepackage{changepage}
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage[immediate]{silence}
+\WarningFilter[temp]{latex}{Command} % silence the warning
+\usepackage{sectsty}
+\DeactivateWarningFilters[temp] % So nothing unrelated gets silenced
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{array,tabularx}
+\usepackage[ngerman,american]{b abel}
+\usepackage{amsthm,amssymb,mathptmx}
+\DeclareSymbolFont{letters}{OT1}{ptm}{m}{n}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{enumitem}% http://ctan.org/pkg/enumitem
+\graphicspath{ {./images/}, {./re_appendices/} }
+\usepackage{helvet}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{csquotes}
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\titleformat{\section}[block]{\fontsize{14}{17}\filcenter\bfseries}{}{1em}{}
+\titleformat{\subsection}
+  {\fontsize{12}{15}\bfseries}{\thesubsection}{1em}{}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{1.5}
+\makeindex
+\renewcommand*\contentsname{Table of Contents}
+\pagenumbering{roman}
+\AtBeginDocument{\urlstyle{APACsame}}
+\titleformat*{\subsubsection}{\normalfont\bfseries}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{0ex}%
+    {-3.25ex plus -1ex minus -0.2ex}%
+    {1.5ex plus 0.2ex}%
+    {\normalfont\normalsize}}
+\makeatother
+ 
+\stepcounter{secnumdepth}
+\stepcounter{tocdepth}
+ 
+ \usepackage[
+ backend=biber,
+ style=apa
+ ]{biblatex}
+ \addbibresource{references.bib}
+ 
+\begin{document}
+
+\import{Sections/}{titlepage.tex}
+\newpage
+
+\import{Sections/}{abstract.tex}
+\newpage
+
+\tableofcontents{}
+\newpage
+
+\listoffigures
+\newpage
+
+\pagenumbering{arabic}
+
+\import{Sections/Chapter_1}{chapter_1.tex}
+\newpage
+
+\import{Sections/Chapter_2}{chapter_2.tex}
+\newpage
+
+\pagenumbering{gobble}
+\printbibliography
+
+\end{document}
