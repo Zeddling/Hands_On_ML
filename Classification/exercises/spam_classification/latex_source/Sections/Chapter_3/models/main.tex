@@ -1,0 +1,40 @@
+\subsection{Training and Testing}
+The models used for the study were Logistic Regression, KNeigbhor's Classifier(KNN), Decision Tree, Random Forests, Naive Bayes variants, Support Vector Machine Classifier and Embedders. GridSearchCV was used for hyperparameter tuning.
+The table below shows the performance of the different models. 
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+model                      & Precision & Recall & f1 score  \\
+\hline
+Logistic Regression        & 98.02     & 95.19  & 96.59     \\
+\hline
+KNN                        & 92.59     & 72.12  & 81.08     \\
+\hline
+Decision Tree              & 80.36     & 86.54  & 83.33     \\
+\hline
+Random Forest              & 98.97     & 92.31  & 95.52     \\
+\hline
+Gaussian Naive Bayes (GNB) & 42.13     & 95.19  & 58.41     \\
+\hline
+Multinomial Naive Bayes    & 90.10     & 87.50  & 88.78     \\
+\hline
+Complement Naive Bayes     & 90.10     & 87.50  & 88.78     \\
+\hline
+Bernoulli Naive Bayes      & 90.53     & 82.69  & 86.43     \\
+\hline
+SVC                        & 88.89     & 92.31  & 90.57     \\
+\hline
+Ensemble: Boosting         & 87.16     & 91.35  & 89.20     \\
+\hline
+Ensemble: Bagging          & 97.03     & 94.23  & 95.61     \\
+\hline
+Ensemble: Majority Voting  & 98.02     & 95.19  & 96.59   \\ 
+\hline
+\end{tabular}
+    \caption{Model Performances}
+    \label{tab:mp}
+\end{table}
+
+For the ensemble methods, Gaussian Naive Bayes was used for the Boosting method since it was the weakest classifier. For bootstrap aggregation/bagging and majority voting methods, the models used were complement naive bayes, logistic regression, random forest and SVC.

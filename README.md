@@ -11,7 +11,7 @@
 		<p>
 			This chapter is an introduction to classification.
 		</p>
-		<p>Link to spam classification paper: <a href="https://github.com/Zeddling/Hands_On_ML/tree/main/Classification/exercises/spam_classification/Spam_Classification">Paper</a> (Uncompiled LaTex. Yet to be finished)</p>
+		<p><a href="https://github.com/Zeddling/Hands_On_ML/tree/main/Classification/exercises/spam_classification/Spam_Classification">Paper</a> Spam Classification Paper</p>
 	</li>
 </ol>
 

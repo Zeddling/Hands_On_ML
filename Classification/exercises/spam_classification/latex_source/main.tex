@@ -6,6 +6,9 @@
 \usepackage[immediate]{silence}
 \WarningFilter[temp]{latex}{Command} % silence the warning
 \usepackage{sectsty}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
 \DeactivateWarningFilters[temp] % So nothing unrelated gets silenced
 %\usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
@@ -34,6 +37,14 @@
 \titleformat*{\subsubsection}{\normalfont\bfseries}
 \usepackage{blindtext}
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Detecting Spam Emails Using Machine Learning Classification Methods},
+    pdfpagemode=FullScreen,
+    }
 \makeatletter
 \renewcommand{\paragraph}{\@startsection{paragraph}{4}{0ex}%
     {-3.25ex plus -1ex minus -0.2ex}%
@@ -65,6 +76,7 @@
 \newpage
 
 \listoftables
+\newpage
 \pagenumbering{arabic}
 
 \import{Sections/Chapter_1}{chapter_1.tex}
@@ -73,7 +85,14 @@
 \import{Sections/Chapter_2}{chapter_2.tex}
 \newpage
 
+\import{Sections/Chapter_3}{chapter_3.tex}
+\newpage
+
+\import{Sections/}{conclusion.tex}
+\newpage
+
 \pagenumbering{gobble}
 \printbibliography
-
+\newpage
+\import{Sections/}{appendix.tex}
 \end{document}
